@@ -1,12 +1,18 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
+import java.util.ArrayList;
 
 public class FourthDot{
     public static void main(String args[]) throws Exception{
         int appearNum = 0;
         int appearNum1 = 0;
-        
+        int frequency = 0;
+        int frequency1 = 0;
+        int temp = -1;
+        int temp1 = -1;
+
+        ArrayList rightAnswer = new ArrayList<>();
         BufferedReader br = new BufferedReader(
             new InputStreamReader(System.in)
         );
@@ -20,6 +26,19 @@ public class FourthDot{
             for(int j = 0;j<2;j++){
                 array[i][j] = Integer.parseInt(st.nextToken());
             } 
+        }
+
+        for(int i = 0; i<3; i++){
+            if(temp == array[0][0] || temp == array[1][0] || temp == array[2][0]){
+                frequency ++;
+                // 빈도와 그 숫자를 연결하는게 필요한데...
+                
+            }
+            temp = array[i];
+        }
+
+        if(frequency == 1){
+            rightAnswer.add(appearNum);
         }
     }
 }
