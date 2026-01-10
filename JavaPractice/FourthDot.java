@@ -54,6 +54,9 @@ public class FourthDot{
             }
         }
 
-        System.out.println(rightAnswer.get(0) + ""+ rightAnswer.get(1));
+        System.out.println(rightAnswer.get(0) + " "+ rightAnswer.get(1));
     }
 }
+
+// 뭐가 도대체 문제인가? 이 코드가 문제인 이유를 어떻게 알아낼 것이며 다음에 똑같이 반복하지 않으려면?
+// >> 당장 떠오르기론 코드의 실행 과정을 분기마다 확인하지 않으면 오류가 있기 쉽겠다는 생각이 든다. 따라서 가시화가 필수적일 것으로 판단된다.
