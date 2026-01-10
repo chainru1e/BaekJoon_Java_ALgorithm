@@ -29,6 +29,7 @@ public class FourthDot{
         }
 
         for(int i = 0; i<3; i++){   // 참고로 python에는 증감 연산자가 없다.
+            frequency = 0;
             for(int j =0; j<3; j++){   // j가 3인 이유는 3 combination 2는 3이기 때문이다? 
                 if(array[i][0] == array[j][0]){
                     frequency++;
@@ -43,11 +44,12 @@ public class FourthDot{
         }
 
         for(int i = 0; i < 3; i++){
+            frequency1 = 0;
             for(int j = 0; j<3; j++){
                 if(array[i][1] == array[j][1]){
                     frequency1++;
                 }
-            }
+            }2
             if(frequency1==1){
                 rightAnswer.add(array[i][1]);
                 break;
@@ -59,4 +61,5 @@ public class FourthDot{
 }
 
 // 뭐가 도대체 문제인가? 이 코드가 문제인 이유를 어떻게 알아낼 것이며 다음에 똑같이 반복하지 않으려면?
+// 바로 frequency가 반복문 이후에 계속 쌓인다는 점!
 // >> 당장 떠오르기론 코드의 실행 과정을 분기마다 확인하지 않으면 오류가 있기 쉽겠다는 생각이 든다. 따라서 가시화가 필수적일 것으로 판단된다.
