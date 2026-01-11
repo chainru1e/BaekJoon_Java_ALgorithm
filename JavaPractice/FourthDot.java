@@ -49,7 +49,7 @@ public class FourthDot{
                 if(array[i][1] == array[j][1]){
                     frequency1++;
                 }
-            }2
+            }
             if(frequency1==1){
                 rightAnswer.add(array[i][1]);
                 break;
